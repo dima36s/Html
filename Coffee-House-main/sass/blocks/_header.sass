@@ -1,0 +1,38 @@
+header
+    display: flex
+    justify-content: space-between
+    padding: 29px 80px 28px
+    .brand-name
+        font-weight: 500
+        font-size: 36px
+        line-height: 53px
+        text-transform: uppercase
+        cursor: pointer
+    .menu
+        display: flex
+        align-items: center
+        &__ul
+            display: flex
+            list-style-type: none
+            gap: 46px
+            text-transform: uppercase
+        &__li
+            a
+                text-decoration: none
+                font-weight: 300
+                font-size: 24px
+                line-height: 36px
+                color: #000
+                position: relative
+                &::after
+                    display: block
+                    content: ""
+                    background-color: #000
+                    height: 3px
+                    width: 0%
+                    left: 50%
+                    position: absolute
+                    transition: width .2s ease-in-out
+                    transform: translateX(-50%)
+                &:hover::after
+                    width: 100%

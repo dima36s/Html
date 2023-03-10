@@ -1,0 +1,93 @@
+.order
+    background: $secondary-color
+    padding: 65px 0 35px
+    display: flex
+    flex-flow: column wrap
+    align-items: center
+    .section__title
+        margin-bottom: 60px!important
+    &__coffee
+        display: flex
+        flex-flow: column wrap
+        gap: 17px
+
+    &__food
+        display: flex
+        flex-flow: column wrap
+        gap: 17px
+
+    .orders
+        margin: 84px auto 39px
+        display: grid
+        grid-template-columns: 300px 354px
+        justify-content: center
+        gap: 132px
+
+        .item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            label
+                margin-left: 16px
+                font-weight: 300
+                font-size: 20px
+                line-height: 30px
+                color: #fff
+        input[type='checkbox']
+            width: 23px
+            height: 21px
+        input:not(input[type='checkbox'])
+            width: 70px
+            background: transparent
+            border: 3px solid #FFFFFF
+            padding: 9px 0 16px
+            font-weight: 300
+            font-size: 20px
+            line-height: 30px
+            text-align: center
+            color: #fff
+            outline: none
+            &::placeholder
+                color: #fff
+    &__fio
+        display: flex
+        justify-content: center
+        gap: 64px
+        input
+            width: 300px
+            background: transparent
+            border: 3px solid #FFFFFF
+            padding: 9px 0 16px
+            font-weight: 300
+            font-size: 20px
+            line-height: 30px
+            text-align: center
+            color: #fff
+            outline: none
+            &::placeholder
+                color: #fff
+    .total
+        text-align: center
+        color: #fff
+        margin-bottom: 26px
+        font-weight: 300
+        font-size: 20px
+        line-height: 30px
+    button
+        cursor: pointer
+        text-transform: uppercase
+        color: $secondary-color
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        background: #fff
+        border: 5px solid #fff
+        padding: 13px 24px 12px
+        width: fit-content
+        transition: .3s
+        &:hover
+            color: #fff
+            background: transparent
+    .section__title
+        color: #fff
+        margin-bottom: 28px
